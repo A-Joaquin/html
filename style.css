@@ -3,6 +3,8 @@
 {
     margin: 0;
     box-sizing: border-box;
+
+
 }
 body
 {
@@ -36,7 +38,6 @@ nav
 {
     margin: 0 10px;
     display: flex;
-  
 }
 
 .nav-link
@@ -65,34 +66,35 @@ nav
 .titulo
 {
     color:  white;
-    font-size: 38px;
-    margin: 0 15px;
+    font-size: 28px;
+    margin: 10px, 5px;
     line-height: 100px;
     text-transform: uppercase;
-    text-decoration: dotted;
+    padding: 0px 10px;
+    background-color: #0a0d0e;
 
-    padding: auto;
 }
 .nav-menu-item
 {
-    color: rgb(247, 245, 241);
+    
     font-size: 18px;
-    margin: 0 10px;
+    margin: 0 20px;
     line-height: 100px;
     width: max-content;
+    
 }
 .nav-menu-link
 {
     padding: 8px 12px;
-    border-radius:3px;
+    border-radius:5px;
+    color: rgb(255, 255, 255);
+    
 
 }
 .nav-menu-link:hover
 {
     background-color: white;
     color: black;
-
-
 }
 footer
 {
@@ -110,7 +112,7 @@ table
     width: 80%;
     background-color: rgb(247, 248, 248);
     border-collapse: collapse;
-    margin: 0 auto;
+    margin: 3% auto;
 }
 th,td
 {
@@ -137,5 +139,132 @@ h1
     padding: 20px;
     margin: 0 180px;
     color: #0a0d0e;
+}
+.title-nav-main
+{
+    text-align: center;
+}
+.nav-css-main1
+{
+
+    align-items: center;
+
+}
+.nav-css-main
+{
+    display:flex;
+   
+    align-items: center;
+    width: min-content;
+    margin: auto ;
+
+}
+
+.nav-css
+{
     
+    background-color: black;
+    color: white;
+    padding: 10px;
+    margin: 0 5px;
+    text-decoration: none;
+    border-radius: 6px;
+    font-size: 20px;
+    align-items: center;
+}
+.nav-css:hover
+{
+    background-color: rgb(14, 124, 23);
+    color: rgb(243, 243, 243);
+}
+#colores
+{
+    margin: 0% 10%;
+}
+#longitudes
+{
+    margin: 0% 10%;
+}
+.practicacss
+{
+    margin: 0% 5%;
+    line-height: 30px;;
+    background-color: #4c43c4;
+    vertical-align:bottom
+
+}
+.practicacssMain
+{
+    margin: 0% 10%;
+    background-color: #4c43c4;
+    padding: 3% 0% 5% 0%;
+}
+.ppractica
+{
+
+    letter-spacing: 0px;;
+    word-spacing: 1px;;
+    color: white;
+
+    
+}
+.strongpractica
+{
+    color: rgb(28, 211, 211);
+}
+.h2practica
+{
+    color: rgb(224, 238, 27);
+
+    text-transform: uppercase;
+}
+.h3practica
+{
+    text-decoration: underline;
+    color: rgb(224, 137, 86);
+}
+.empractica
+{
+    color: #f6fa03;
+}
+
+.titulopractica
+{
+    color: #55e048;
+}
+.imagenpractica,img
+{
+    margin: 5% 25%; 
+    width: 400px;
+    height: 300px; 
+}
+#colores
+{
+    margin: 0% 5%;
+    line-height: 30px;
+}
+#selectores
+{
+    margin: 0% 5%;
+    line-height: 30px;
+}
+#longitudes
+{
+    margin: 0% 5%;
+    line-height: 30px;
+}
+#propiedades
+{
+    margin: 0% 5%;
+    line-height: 30px;
+}
+.h1css
+{
+    margin: 2% 0;
+    padding: 0%;
+}
+code
+{
+    display: block;
+    text-align: center;
 }

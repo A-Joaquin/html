@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elementos</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <nav>
+        <div class="navdiv">
+            <p class="titulo">Mi manual</p>          
+        </div>
+        <ul class="nav-menu">
+            <li class="nav-menu-item"><a href="index.html" class="nav-menu-link nav-link">RECURSOS</a></li>
+            <li class="nav-menu-item"><a href="Elementos.html" class="nav-menu-link nav-link">ELEMENTOS HMTL</a></li>
+            <li class="nav-menu-item"><a href="css.html" class="nav-menu-link nav-link">CSS</a></li>
+            <li class="nav-menu-item"><a href="practicaCss.html" class="nav-menu-link nav-link">PRACTICA CSS</a></li>
+        
+        </ul>
+        </nav>
+    </header>
+
+    <h1 class="title-nav-main">Seleccione una opcion</h1>
+
+    <div class="nav-css-main1">
+        
+           <div class="nav-css-main">
+            <a href="#colores" class="nav-css">Colores</a>
+            <a href="#longitudes" class="nav-css">Selectores</a>
+            <a href="#selectores" class="nav-css">Unidades</a>
+            <a href="#propiedades" class="nav-css">Propiedades</a>
+           </div>
+        
+        
+        
+        
+        
+
+    </div>
+    <div>   
+        <div>
+            <section id="colores">
+                <h1 class="h1css">DEFINICION DE COLORES</h1>
+                <h2> Usando los nombres de colores</h2>
+                <p>
+                    Podemos especificar un color usando un nombre predefinido. Por ejemplo podemos
+especifi            car que el color del párrafo sea rojo con la siguiente regla:
+                </p>
+                <code class="code">
+                    p{ <br>
+                        color: red; <br>
+                    }
+                        
+                </code>
+                <p>Lista de los nombres de colores soportados por la mayoría de los navegadores <a href="https://www.w3.org/TR/css-color-3/#svg-color">CSS Color Module Level 3</a></p>
+                <h2> Usando el modelo RGB</h2>
+                <p>Podemos establecer el valor de un color mezclando diferentes intensidades de los
+                    tres colores primarios.</p>
+                <img src="RGB-que-es-06.png" alt="Imagen RGB">
+                <p>Para obtener un color debemos mezclar los colores primarios como un pintor</p>
+                <span>Hay dos opciones:</span>
+                <h3> Usando la función rgb(r,g,b)</h3>
+                <p>Para definir un color como la mezcla las intensidades de los colores primarios
+                    podemos usar la función:
+                    </p>
+                <code class="code">rgb(red, green, blue)</code>
+                <span>Donde:</span>
+                <ul>
+                    <li> <p><em>El parámetro red</em></p>
+                        <ul>
+                        
+                            <li>Especifica la intensidad del rojo</li>
+                            <li>Los valores posibles son: [0-255] o [0%-100%]</li>
+                        </ul> 
+                    </li>
+
+                    <li> <p><em> El parámetro green</em></p>
+                        <ul>
+                        
+                            <li>Especifica la intensidad del rojo</li>
+                            <li>Los valores posibles son: [0-255] o [0%-100%]</li>
+                        </ul> 
+                    </li>
+
+                    <li> <p><em> El parámetro blue</em></p>
+                        <ul>
+                        
+                            <li>Especifica la intensidad del rojo</li>
+                            <li>Los valores posibles son: [0-255] o [0%-100%]</li>
+                        </ul> 
+                    </li>
+                </ul>
+                
+                <h4> Opacidad</h4>
+                <p>Podemos definir la transparencia de un color usando la función rgba, esta función es
+                    idéntica a la función rgb, pero con un parámetro adicional denominado opacidad,
+                    para especificar la transparencia.</p>
+                <code class="code">rgba(r,g,b,a)</code>
+                <span>Donde:</span>
+                <ul>
+                    <li> <p><em>El parámetro a</em></p>
+                        <ul>
+                        
+                            <li>Especifica la transparencia</li>
+                            <li><p><em>Los valores posibles son: [0-1]</em></p></li>
+                            <ul>
+                                <li>0, significa completamente transparente</li>
+                                <li> 1, significa completamente opaco (no transparente)</li>
+                            </ul>
+                             
+                        </ul> 
+                    </li>
+
+                </ul>
+                <h3>Usando  un valor hexadecimal</h3>
+                <p>Podemos utilizar un número hexadecimal para definir un color. Es una alternativa a
+                    la función rgb, es decir permite definir un color como la mezcla de intensidades de
+                    los colores primarios</p>
+                <code class="code">#numero_hexadecimal</code>
+                <span>Donde:</span>
+                <ul>
+                    <li><p><em>El número hexadecimal</em></p></li>
+                    <ul>
+                        <li> Tiene 6 dígitos</li>
+                        <li> Los primeros dos dígitos indican el color rojo</li>
+                        <li> Los dos dígitos del medio indican el color verde</li>
+                        <li> Los dos últimos dígitos indican el color azul</li>
+                    </ul>
+                </ul>
+
+                <h3> Usando el modelo HSL
+                </h3>
+                <p>En este modelo utilizamos conceptos que son más fáciles de comprender.
+                    En CSS para poder trabajar con este modelo tenemos la siguiente opción:
+                    </p>
+                
+                <h4>Usando la función hsl(h, s, l)</h4>
+                <p>Podemos definir el color usando la función
+                </p>
+                <code class="code">hsl(hue, saturation, lightness)</code>
+                <span>Donde:</span>
+                <ul>
+                    <li><p><em> El parámetro hue (tono)
+                    </em></p></li>
+                    <ul>
+                        <li> Es el color</li>
+                        <li>
+                            Los valores posibles son: [0-360]
+
+                        </li>
+                        <li> Podemos obtener los valores de la rueda de colores
+                        </li>
+                    </ul>
+                </ul>
+                <img src="WhatsApp Image 2022-09-25 at 9.24.45 PM.jpeg" alt="funcion hsl">
+
+                <ul>
+                    <li><p><em> El parámetro saturation (saturación)
+
+                    </em></p></li>
+                    <ul>
+                        <li> etermina que tan fuerte o vivo es un color</li>
+                        <li>
+                            Los valores posibles son: [0%-100%]
+                                <ul>
+                                    <li> Donde 100% significa completamente saturado (color muy vivo)
+                                    </li>
+                                    <li>Donde 0% significa sin saturación alguna (color apagado)
+                                    </li>
+                                </ul>
+                        </li>
+                    </ul>
+                </ul>
+                <img src="WhatsApp Image 2022-09-25 at 9.24.53 PM.jpeg" alt="funcion hsl">
+                
+                <ul>
+                    <li><p><em> El parámetro ligthness (Luminosidad)</em></p></li>
+                    <ul>
+                        <li> Permite establecer la claridad u oscuridad de un color</li>
+                        <li>
+                            Los valores posibles son de: [0%-100%]
+
+                                <ul>
+                                    <li> Donde 100% significa completamente blanco (brillantez total)
+
+                                    </li>
+                                    <li> Donde 50% es normal    </li>
+                                    <li>Donde 0% es competamente negro (sin brillantez)</li>
+                                </ul>
+                        </li>
+                    </ul>
+                </ul>
+                <h5>Ocapacidad</h5>
+                <p>Podemos definir la transparencia de un color usando la función hsla, esta función es
+                    idéntica a la función hsl, pero con un parámetro adicional denominado opacidad,
+                    para especificar la transparencia.
+                    </p>
+                <code>hsla(h,s,l,a)
+                </code>
+
+                <span>Donde:</span>
+                <ul>
+                    <li><p><em>El parametro a</em></p></li>
+                    <ul>
+                        <li>Especifica la transparencia
+                        </li>
+                        <li> Los valores posibles son: [0-1]
+                        </li>
+                        <ul>
+                            <li> 0 significa completamente transparente</li>
+                            <li> 1 significa completamente opaco (no transparente)</li>
+                        </ul>
+                    </ul>
+                </ul>
+
+
+            </section>
+
+            <section id="selectores">
+                <h1 class="h1css">SELECTORES</h1>
+                <table class="tablacss">
+                    <thead>
+                        <tr>
+                            <th>Selector</th>
+                            <th>Descripcion</th>
+                            <th>Enlace</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Selectores universales</td>
+                            <td>El selector universal CSS (*) coincide con elementos de cualquier tipo.</td>
+                            <td><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Universal_selectors">link</a></td>
+                        
+                        </tr>
+                        <tr>
+                            <td>Selectores de tipo</td>
+                            <td>El selector de tipo CSS selecciona elementos por nombre de nodo. En otras palabras, selecciona todos los elementos del tipo dado dentro de un documento.</td>
+                            <td><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Type_selectors">link</a></td>
+                           
+                        </tr>
+                       
+                        <tr>
+                            <td>Lista de selectores</td>
+                            <td>La lista de selectores CSS (,) selecciona todos los nodos coincidentes.</td>
+                            <td><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Selector_list">link</a></td>
+                       
+                        </tr>
+                        <tr>
+                            <td>Selectores de ID</td>
+                            <td>En un documento HTML, los selectores de ID de CSS buscan un elemento basado en el contenido del atributo id. El atributo ID del elemento seleccionado debe coincidir exactamente con el valor dado en el selector.</td>
+                            <td><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/ID_selectors">link</a></td>
+                       
+                        </tr>
+
+                        <tr>
+                            <td>Selectores de hermanos generales</td>
+                            <td>El combinador ~ separa dos selectores y selecciona el segundo elemento sólo si está precedido por el primero y ambos comparten un padre común.</td>
+                            <td><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/General_sibling_combinator">link</a></td>
+                       
+                        </tr>
+
+                        <tr>
+                            <td>Los selectores descendientes</td>
+                            <td>El ␣ combinador (que se supone que representan un espacio, o mejor dicho uno o más espacios en blanco) combina dos selectores tales que el selector combinado incluye sólo los elementos que coinciden con el segundo selector para los que hay un elemento ancestro que coincide con el primer selector. Los selectores descendientes son similares a selectores hijos , pero que no requieren que la relación entre los elementos coincidentes ser estrictamente entre padres e hijos.</td>
+                            <td><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Descendant_combinator">link</a></td>
+                            
+                        </tr>
+                        
+                        <tr>
+                            <td>Combinador de columnas</td>
+                            <td>El combinador de columnas () se coloca entre dos selectores CSS. Solo coincide con los elementos que coinciden con el segundo selector que pertenecen a los elementos de columna que coinciden con el primero.||</td>
+                            <td><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Descendant_combinator">link</a></td>
+                            
+                        </tr>
+
+                        <tr>
+                            <td>Selectores de clases</td>
+                            <td>El selector de clases CSS hace coincidir los elementos en función del contenido de su atributo de clase.</td>
+                            <td><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Class_selectors">link</a></td>
+                            
+                        </tr>          
+                        
+                        <tr>
+                            <td>Child combinator</td>
+                            <td>El combinador secundario () se coloca entre dos selectores CSS. Coincide solo con aquellos elementos emparejados por el segundo selector que son los hijos directos de los elementos emparejados por el primero.></td>
+                            <td><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Child_combinator">link</a></td>
+                            
+                        </tr>
+
+                        <tr>
+                            <td>Attribute selectors</td>
+                            <td>El selector de atributos CSS hace coincidir elementos en función de la presencia o el valor de un atributo determinado.
+    
+                            </td>
+                            <td><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Attribute_selectors">link</a></td>
+                            
+                        </tr>
+                    
+                    </tbody>
+                </table>
+
+            </section>
+
+            <section id="longitudes">
+                <h1 class="h1css">LONGITUDES</h1>
+                <p>Hay dos tipos de longitudes utilizadas en CSS: relativas y absolutas. Es importante conocer la diferencia para entender cuán grandes se volverán las cosas.10px30em</p>
+                <h2 class="h1css">Unidades de longitud absoluta</h2>
+                <p>Las siguientes son todas unidades de longitud absoluta: no son relativas a nada más y generalmente se consideran que siempre son del mismo tamaño.</p>
+                <table class="tablacss">
+                    <thead>
+                        <tr>
+                            <th>Unidad</th>
+                            <th>Nombre</th>
+                            <th>Equivalente a</th>
+
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>cm</td>
+                            <td>Centímetros</td>
+                            <td>1cm = 37.8px = 25.2/64in</td>
+                        </tr>
+
+                        <tr>
+                            <td>cm</td>
+                            <td>Centímetros</td>
+                            <td>1cm = 37.8px = 25.2/64in</td>
+                        </tr>
+
+
+                        <tr>
+                            <td>mm</td>
+                            <td>Milímetros</td>
+                            <td>1mm = 1/10 de 1cm</td>
+                        </tr>
+
+
+                        <tr>
+                            <td>Q</td>
+                            <td>Cuarto de milímetro</td>
+                            <td>1Q = 1/40 de 1cm</td>
+                        </tr>
+
+
+                        <tr>
+                            <td>in</td>
+                            <td>Pulgadas</td>
+                            <td>1 pulgada = 2.54cm = 96px</td>
+                        </tr>
+
+
+                        <tr>
+                            <td>cp</td>
+                            <td>Picas</td>
+                            <td>1pc = 1/6 de 1 pulgada</td>
+                        </tr>
+
+
+                        <tr>
+                            <td>pt</td>
+                            <td>Puntos</td>
+                            <td>	1pt = 1/72 de 1 pulgada</td>
+                        </tr>
+
+                        <tr>
+                            <td>px</td>
+                            <td>Píxeles</td>
+                            <td>1px = 1/96 de 1 pulgada</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <p>La mayoría de estas unidades son más útiles cuando se utilizan para imprimir, en lugar de la salida en pantalla. Por ejemplo, normalmente no usamos (centímetros) en la pantalla. El único valor que usará comúnmente es (píxeles).cmpx</p>
+                
+                <h2 class="h1css">Unidades de longitud relativa</h2>
+                <p>Las unidades de longitud relativa son relativas a otra cosa, tal vez el tamaño de la fuente del elemento padre o el tamaño de la ventana gráfica. El beneficio de usar unidades relativas es que con una planificación cuidadosa puede hacer que el tamaño del texto u otros elementos se escale en relación con todo lo demás en la página. Algunas de las unidades más útiles para el desarrollo web se enumeran en la siguiente tabla.</p>
+                <table class="tablacss">
+                    <thead>
+                        <tr>
+                            <th>Unidad</th>
+                            <th>Respecto a</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>em</td>
+                            <td>Tamaño de fuente del padre, en el caso de propiedades tipográficas como , y tamaño de fuente del elemento en sí, en el caso de otras propiedades como . font-sizewidth</td>
+                        
+                        </tr>
+                        <tr>
+                            <td>ex</td>
+                            <td>x-altura de la fuente del elemento.</td>
+                        </tr>
+                        <tr>
+                            <td>ch</td>
+                            <td>La medida avanzada (ancho) del glifo "0" de la fuente del elemento.</td>
+                        </tr>
+                        
+                        <tr>
+                            <td>rem
+                            </td>
+                            <td>Tamaño de fuente del elemento raíz.</td>
+                        </tr>
+    
+    
+                        <tr>
+                            <td>lh</td>
+                            <td>Altura de línea del elemento.</td>
+                        </tr>
+    
+                        <tr>
+                            <td>rlh</td>
+                            <td>Altura de línea del elemento raíz. Cuando se usa en las propiedades o del elemento raíz, se refiere al valor inicial de las propiedades.font-sizeline-height</td>
+                        </tr>
+    
+                        <tr>
+                            <td>vw</td>
+                            <td>	1% del ancho de la ventanilla.</td>
+                        </tr>
+    
+                        <tr>
+                            <td>vh</td>
+                            <td>	1% de la altura de la ventanilla.</td>
+                        </tr>
+    
+                        <tr>
+                            <td>vmin</td>
+                            <td>	1% de la dimensión más pequeña de la ventanilla.</td>
+                        </tr>
+                                 
+                    </tbody>
+                </table>
+            
+            </section>
+
+
+            <section id="propiedades">
+                <h1 class="h1css">PROPIEDADES</h1>
+                <h2>Propiedades de fuentes</h2>
+                <table class="tablacss">
+                    <thead>
+                        <tr>
+                            <th>Propiedades</th>
+                            <th>Descripcion</th>
+                            <th>Enlace</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <td>familia de fuentes</td>
+                            <td>La propiedad CSS de la familia de fuentes especifica una lista priorizada de uno o más nombres de familia de fuentes y/o nombres de familia genéricos para el elemento seleccionado.</td>
+                            <td><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/font-family">link</a></td>
+                        </tr>
+
+                        <tr>
+                            <td>estilo de fuente</td>
+                            <td>La propiedad CSS de estilo de fuente establece si una fuente debe tener un estilo con una cara normal, cursiva u oblicua de su familia de fuentes.</td>
+                            <td><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/font-style">link</a></td>
+                        </tr>
+
+
+                        <tr>
+                            <td>font-variant</td>
+                            <td>La propiedad de abreviatura CSS font-variant le permite establecer todas las variantes de fuente para una fuente.</td>
+                            <td><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/font-variant">link</a></td>
+                        </tr>
+
+
+                        <tr>
+                            <td>font-weight</td>
+                            <td>La propiedad CSS font-weight establece el peso (o negrita) de la fuente. Los pesos disponibles dependen de la familia de fuentes que se establece actualmente.</td>
+                            <td><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/font-weight">link</a></td>
+                        </tr>
+
+
+                        <tr>
+                            <td>fuente</td>
+                            <td>La propiedad de abreviatura CSS de fuente establece todas las diferentes propiedades de la fuente de un elemento. Alternativamente, establece la fuente de un elemento en una fuente del sistema.</td>
+                            <td><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/font">link</a></td>
+                        </tr>
+                    </tbody>
+                </table>
+
+
+                <h2>Propiedades de color y fondo</h2>
+                <table class="tablacss">
+                    <thead>
+                        <tr>
+                            <th>Propiedades</th>
+                            <th>Descripcion</th>
+                            <th>Enlace</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <td>color</td>
+                            <td>The color CSS property sets the foreground color value of an element's text and text decorations, and sets the currentcolor value. currentcolor may be used as an indirect value on other properties and is the default for other color properties, such as border-color.</td>
+                            <td><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/color">link</a></td>
+                        </tr>
+
+                        <tr>
+                            <td>color de fondo</td>
+                            <td>La propiedad CSS de color de fondo establece el color de fondo de un elemento.</td>
+                            <td><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/background-color">link</a></td>
+                        </tr>
+
+
+                        <tr>
+                            <td>imagen de fondo</td>
+                            <td>La propiedad CSS de imagen de fondo establece una o más imágenes de fondo en un elemento.</td>
+                            <td><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/background-image">link</a></td>
+                        </tr>
+
+
+                        <tr>
+                            <td>repetición en segundo plano</td>
+                            <td>La propiedad CSS de repetición de fondo establece cómo se repiten las imágenes de fondo. Una imagen de fondo puede repetirse a lo largo de los ejes horizontal y vertical, o no repetirse en absoluto.</td>
+                            <td><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/background-repeat">link</a></td>
+                        </tr>
+
+
+                        <tr>
+                            <td>fondo-adjunto</td>
+                            <td>La propiedad CSS de datos adjuntos de fondo establece si la posición de una imagen de fondo está fija dentro de la ventana gráfica o se desplaza con su bloque que contiene.</td>
+                            <td><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/background-attachment">link</a></td>
+                        </tr>
+
+                        <tr>
+                            <td>background-position</td>
+                            <td>La propiedad CSS de posición de fondo establece la posición inicial de cada imagen de fondo. La posición es relativa a la capa de posición establecida por origen de fondo.</td>
+                            <td><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/background-position">link</a></td>
+                        </tr>
+
+
+                    </tbody>
+                </table>
+
+
+                
+
+
+
+
+            </section>
+        </div>
+        
+    </div>
+    
+
+    <footer id="pie">
+        <address>
+            <p>Autor: Arturo Veliz Zepita</p>
+            <a href="mailto:arturo.veliz@ucb.edu.bo" class="nav-link-foot">arturo.veliz@ucb.edu.bo</a>
+            <p>Bolivia 2022</p>
+            
+        </address>
+         
+    </footer>
+    
+</body>
