@@ -99,16 +99,7 @@ nav
 
 footer
 {
-     background-color: black;
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-    height: autos;
-  color: white;
-
-
-
-
+ margin: 50px auto;
     justify-content: left;
 
     padding: 30px;
