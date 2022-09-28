@@ -99,13 +99,25 @@ nav
 footer
 {
 
-    margin: 50px auto;
+   footer
+{
+     background-color: black;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+    height: autos;
+  color: white;
+
+
+
+
     justify-content: left;
 
     padding: 30px;
     color: #E9ECF2;
     display: flex;
     background-color: rgb(7, 6, 6);
+}
 }
 table
 {
